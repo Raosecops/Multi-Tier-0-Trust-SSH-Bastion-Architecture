@@ -1,0 +1,11 @@
+Host bastion
+    HostName <YOUR_BASTION_IP>
+    User ubuntu
+    IdentityFile ~/.ssh/id_ed25519
+    ForwardAgent yes
+
+Host prd-euw
+    HostName <YOUR_PRODUCTION_IP>
+    User ubuntu
+    ProxyJump bastion
+    IdentityFile ~/.ssh/id_ed25519

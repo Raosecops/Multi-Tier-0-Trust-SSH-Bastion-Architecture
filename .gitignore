@@ -1,0 +1,8 @@
+# Private keys and credentials
+id_ed25519
+id_ed25519.pub
+*.pem
+
+# System and log files
+*.log
+.DS_Store
